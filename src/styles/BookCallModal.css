@@ -1,0 +1,128 @@
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(13, 13, 13, 0.85);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.modal-box {
+  position: relative;
+  background-color: var(--charcoal);
+  border: 1px solid rgba(201, 169, 110, 0.2);
+  width: 100%;
+  max-width: 460px;
+  padding: 48px 40px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  padding: 4px 8px;
+}
+
+.modal-close:hover {
+  color: var(--gold);
+}
+
+.modal-eyebrow {
+  font-family: var(--font-body);
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 0 0 16px;
+}
+
+.modal-heading {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 400;
+  color: var(--ivory);
+  margin: 0 0 12px;
+}
+
+.modal-desc {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin: 0 0 32px;
+}
+
+.modal-field {
+  margin-bottom: 20px;
+}
+
+.modal-label {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ivory-dim);
+  margin-bottom: 10px;
+}
+
+.modal-input,
+.modal-textarea {
+  width: 100%;
+  background-color: var(--obsidian);
+  border: 1px solid rgba(240, 235, 225, 0.15);
+  color: var(--ivory);
+  font-family: var(--font-body);
+  font-size: 14px;
+  padding: 14px 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  resize: none;
+}
+
+.modal-input:focus,
+.modal-textarea:focus {
+  border-color: var(--gold);
+}
+
+.modal-submit {
+  width: 100%;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--obsidian);
+  background-color: var(--gold);
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.modal-submit:hover {
+  background-color: var(--gold-light);
+}
+
+@media (max-width: 600px) {
+  .modal-box {
+    padding: 36px 24px;
+  }
+  .modal-heading {
+    font-size: 26px;
+  }
+}
