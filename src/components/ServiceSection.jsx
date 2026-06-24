@@ -1,4 +1,4 @@
-import '../styles/serviceSection.css'
+import '../styles/ServiceSection.css'
 import { motion } from 'framer-motion'
 
 const items = [
