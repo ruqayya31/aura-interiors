@@ -1,4 +1,4 @@
-import '../styles/bookCallModal.css'
+import '../styles/BookCallModal.css'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useState } from 'react'
 

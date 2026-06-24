@@ -1,4 +1,4 @@
-import '../styles/testimonials.css'
+import '../styles/Testimonials.css'
 import { motion } from 'framer-motion'
 
 const items = [

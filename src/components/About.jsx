@@ -1,4 +1,4 @@
-import '../styles/about.css'
+import '../styles/About.css'
 import { motion } from 'framer-motion'
 
 function About() {

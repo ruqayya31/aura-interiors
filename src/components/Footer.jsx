@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import '../styles/footer.css'
+import '../styles/Footer.css'
 import ContactModal from './ContactModal'
 
 function Footer() {
